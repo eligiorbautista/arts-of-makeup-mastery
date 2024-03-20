@@ -1,19 +1,91 @@
-
-
-/* START OF FOOTER */
- 
-/* Upper Footer */
 .upper-footer {
-    font-family: "Tenor Sans", sans-serif !important;
+    font-family: "Tenor Sans", sans-serif !important
 }
 
-  
-.image-logo{
+.lower-footer {
+    font-size: 1rem !important
+}
+
+.image-logo {
     width: 60px;
-    margin-right: 20px;
+    margin-right: 20px
 }
 
 .fa-envelope {
     font-size: 2.3rem;
-    color: #000000;
+    color: #000000
+}
+
+@media (max-width: 1066px) {
+    .upper-footer {
+        font-size: 0.9rem !important;
+        font-family: "Tenor Sans", sans-serif !important
+    }
+
+    .lower-footer {
+        font-size: 0.9rem !important
+    }
+
+    .image-logo {
+        width: 40px;
+        margin-right: 20px
+    }
+
+    .fa-envelope {
+        font-size: 2.1rem;
+        color: #000000
+    }
+}
+
+@media (max-width: 989px) {
+    .upper-footer {
+        font-size: 0.8rem !important;
+        font-family: "Tenor Sans", sans-serif !important
+    }
+
+    .image-logo {
+        width: 30px;
+        margin-right: 20px
+    }
+
+    .fa-envelope {
+        font-size: 1.8rem;
+        color: #000000
+    }
+}
+
+@media (max-width: 769px) {
+    .upper-footer span {
+        margin-top: 12px
+    }
+
+    .image-logo {
+        width: 30px;
+        margin-right: 20px
+    }
+
+    .fa-envelope {
+        font-size: 1.2rem;
+        color: #000000
+    }
+}
+
+@media (max-width: 360px) {
+    .upper-footer span {
+        font-size: 0.7rem !important
+    }
+
+    .lower-footer {
+        font-size: 0.9rem !important
+    }
+
+    .image-logo {
+        width: 20px;
+        margin-right: 20px
+    }
+
+    .fa-envelope {
+        font-size: 1em;
+        color: #000000
+    }
 }
