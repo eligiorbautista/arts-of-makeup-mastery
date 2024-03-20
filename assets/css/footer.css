@@ -1,0 +1,19 @@
+
+
+/* START OF FOOTER */
+ 
+/* Upper Footer */
+.upper-footer {
+    font-family: "Tenor Sans", sans-serif !important;
+}
+
+  
+.image-logo{
+    width: 60px;
+    margin-right: 20px;
+}
+
+.fa-envelope {
+    font-size: 2.3rem;
+    color: #000000;
+}
