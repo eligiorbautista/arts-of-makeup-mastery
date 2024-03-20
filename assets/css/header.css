@@ -34,6 +34,7 @@
     color: #b4a79e;
     font-weight: 500;
     transition: all 0.3s ease-in-out;
+    margin-top: 13px;
 }
 
 .header .social-links a {
@@ -57,7 +58,7 @@
 
 .header #hidden-btn-contact {
     display: none;
-    color: #ffffff;
+    color: #b4a79e;
 }
 
 .header #btn-contact {
@@ -70,3 +71,85 @@
     font-size: 1.3rem;
     display: none;
 }
+
+@media (max-width: 1201px) {
+    .header img {
+        width: 40px;
+        margin-right: 20px;
+    }
+
+    .header .logo {
+        font-size: 1.6rem;
+    }
+
+    .header #hidden-btn-contact,
+    .header #btn-contact {
+        padding: 6px 40px;
+        font-size: 1rem;
+    }
+
+
+
+    .header nav ul li {
+        display: inline-block;
+        padding: 0px 20px;
+    }
+
+    .header nav ul li a {
+        font-size: 1rem;
+
+    }
+}
+
+@media (max-width: 988px) {
+    .header {
+        display: flex;
+        align-items: center;
+        padding: 2vh 2vw;
+        background-color: #e6dcd3;
+    }
+ 
+
+    .header img {
+        width: 30px;
+        margin-right: 20px;
+    }
+
+    .header .logo {
+        margin: 2vh 0vw;
+        font-size: 1.3rem;
+        
+    }
+
+    .header #hidden-btn-contact,
+    .header #btn-contact {
+        padding: 4px 30px;
+        font-size: 0.9rem;
+    }
+
+    .header #hidden-btn-contact{
+        display: inline-block;
+        font-family: 'Playfair Display', sans-serif;
+    }
+
+    .header #btn-contact{
+        display: none;
+    }
+
+    .header nav ul li {
+        display: inline-block;
+        padding: 0px 20px;
+    }
+
+    .header nav ul li a {
+        font-size: 0.9rem;
+    }
+}
+
+/* Hamburger Nav*/
+@media (max-width: 875px) {}
+
+@media (max-width: 1116px) {}
+
+@media (max-width: 1116px) {}
+@media (max-width: 1116px) {}
