@@ -3,7 +3,6 @@
     align-items: center;
     padding: 2vh 2vw;
     background-color: #e6dcd3;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .header .logo {
@@ -37,11 +36,7 @@
     transition: all 0.3s ease-in-out;
     margin-top: 13px;
 }
-
-.header .social-links a {
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-}
-
+ 
 .header nav ul li a.active {
     color: #3f352c;
     font-weight: 700;
@@ -66,7 +61,6 @@
     background-color: #bda18c;
     color: #3f352c;
     margin-left: auto;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .header .menubar {
@@ -161,16 +155,21 @@
     nav {
         display: none;
         transition: opacity 0.3s ease;
-        /* Add opacity transition for a fade effect */
         position: absolute;
         z-index: 1;
         left: 0;
         right: 0;
         margin: 0 auto;
         opacity: 0;
-        /* Start with opacity 0 */
     }
 
+    .header img {
+        margin-left: 20px;
+    }
+
+    label.menubar {
+        margin-right: 20px;
+    }
      
 
     #menubar:checked~nav {
@@ -184,10 +183,7 @@
         width: 90vw;
         background-color: #e6dcd3;
         border-radius: 5px;
-        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
         opacity: 1;
-       
-        /* Set opacity to 1 when the menu is open */
     }
 
     #menubar:checked~nav ul {
