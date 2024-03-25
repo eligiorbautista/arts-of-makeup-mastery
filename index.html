@@ -4,216 +4,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    <title>Art of Makeup Mastery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./assets/css/header.css">
-    <link rel="stylesheet" href="./assets/css/footer.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <title>Arts of Makeup Mastery</title>
-</head>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="shortcut icon" href="assets/images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="card.css">
 
 <body>
-    <div class="header">
-        <img src="./assets/images/logo.PNG" alt="">
-        <p class="logo">Art of Makeup Mastery</p>
-        <input type="checkbox" name="menubar" id="menubar" class="menubar">
-        <label for="menubar" class="menubar">
-            <i id="menubar-icon" class="fa-sharp fa-solid fa-bars" onclick="valCheck()"></i>
-        </label>
-        <nav>
-            <ul class=" text-center">
+    <header>
+        <div class="navbar">
+            <div class="logo"><img src="assets/images/logo.PNG" alt="">
+                <p>Art of Makeup Mastery</p>
+            </div>
+            <ul class="links">
+                <li><a href="" class="active">home</a></li>
+                <li><a href="">about</a></li>
                 <li>
-                    <a href="index.html" class="active">home</a>
+                    <a href="">how to ▾</a>
+                    <!-- <a href="" id="dropdown_menu_how_to_button">how to ▾</a>
+                    <div class="dropdown_menu_how_to">
+                        <ul class="links">
+                            <li><a href="">what style best suits you?</a></li>
+                            <li><a href="">what color best suits you?</a></li>
+                            <li><a href="">face</a></li>
+                            <li><a href="">eyes</a></li>
+                            <li><a href="">lips</a></li>
+                        </ul>
+                    </div> -->
                 </li>
-                <li>
-                    <a href="#">about</a>
-                </li>
-                <li>
-                    <a href="#">how to</a>
-                </li>
-                <li>
-                    <a href="#">products</a>
-                </li>
-                <li>
-                    <a href="#" target="_blank" id="hidden-btn-contact">contact</a>
-                </li>
+                <li><a href="">products ▾</a></li>
             </ul>
-        </nav>
-        <a href="#" target="_blank" id="btn-contact">contact</a>
-    </div>
+            <a href="" class="action_btn">Contact</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a class="active" href="">home</a></li>
+            <li><a href="">about</a></li>
+            <li><a href="">how to ▾</a></li>
+            <li><a href="">products ▾</a></li>
+            <li><a href="">contact</a></li>
+        </div>
+    </header>
+
     <main>
-
-        <section id="intro">
-            <div class="container-lg">
-                <!-- Grid -->
-                <!-- Row -->
-                <div class="row justify-content-center align-items-center gap-5">
-                    <!-- Col -->
-                    <div class="col-md-5 text-center text-md-start">
-                        <h1>
-                            <div class="display-2" style="font-family: 'Satisfy', cursive !important;">What is new in
-                                the makeup industry?</div>
-                        </h1>
-                        <p class="lead my-4 text-muted" style="font-family: 'Tenor Sans', sans-serif !important;">Art of
-                            Makeup Mastery is here to teach you all about makeup. Know all about the trending
-                            information this 2024!</p>
+        <section>
+            <div class="container">
+                <div class="text-container">
+                    <h1>What is new in the makeup industry?</h1>
+                    <p>Art of Makeup Mastery is here to teach you all about makeup. Know all about the trending
+                        information this 2024!</p>
+                </div>
+                <div class="image-container">
+                    <img src="assets/images/beauty-set.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section>
+            <h1 class="section-title">Trending Articles</h1>
+            <div class="container">
+                <div class="card">
+                    <img src="assets/images/makeup-trends.png" alt="">
+                    <div class="card-content">
+                        <h3>Makeup Trends of 2024</h3>
+                        <h4>BY TASHA NICOLE SMITH</h4>
+                        <p><i class="fa-regular fa-calendar-days"> </i> February 17, 2024</p>
+                        <a target="_blank" href="https://www.elle.com/beauty/makeup-skin-care/a46671624/2024-makeup-trends/" class="card-btn">Read Article <i class="fa-brands fa-readme"></i></a>
                     </div>
-                    <!-- Col -->
-                    <div class="col-md-5 text-center d-none d-md-block">
-                        <span class="tt" data-bs-placement="bottom" title="Net Ninja Book Cover">
-                            <img class="img-fluid" src="./assets/images/beauty-set.png" alt="">
-                        </span>
+                </div>
+
+                <div class="card">
+                    <img src="assets/images/pat-mcgrath.png" alt="">
+                    <div class="card-content">
+                        <h3>Pat McGrath Glass Skin</h3>
+                        <h4>BY ANNIE BLAY</h4>
+                        <p><i class="fa-regular fa-calendar-days"> </i> February 2, 2024</p>
+                        <a target="_blank" href="https://www.allure.com/story/pat-mcgrath-porcelain-skin-maison-maison-margiela-couture-makeup" class="card-btn">Read Article <i class="fa-brands fa-readme"></i></a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/images/douyin-morena.png" alt="">
+                    <div class="card-content">
+                        <h3>Douyin Makeup on Morenas</h3>
+                        <h4>BY BEAUTYHUB.PH</h4>
+                        <p><i class="fa-regular fa-calendar-days"> </i> March 17, 2024</p>
+                        <a target="_blank" href="https://www.beautyhub.ph/lifestyle/smile-confidence/douyin-makeup-morena/" class="card-btn">Read Article <i class="fa-brands fa-readme"></i></a>
                     </div>
                 </div>
             </div>
         </section>
-
-        <!-- Trending Articles -->
         <section>
-            <div class="container-lg">
-                <div class="text-center">
-                    <h1 class="section-title">Trending Articles</h1>
+            <h1 class="section-title">Trending Products of the Month</h1>
+            <div class="container">
+                <div class="oval-image-container ">
+                    <a target="_blank" href="https://flowerknows.co/?gs2id=CjsaCQiAqsitBhDlARIsAGMR1RixghUQjuWARa8LoLw9WNnE2i9HzhshG2-dyV_IS3ok6UH048kqGIMaAlbLEALw_wcB&ource=vaneadssgaolpo&edium=vasasdneraukilop2&ampaign=ganikolopare3da&ontent=ikoloete&ref=viktoriia&erm=bananaterjikulop&gad_source=1"><img class=" oval-image" src="assets/images/flowerknows.png" alt=""></a>
                 </div>
-                <!-- Grid -->
-                <!-- Row -->
-                <div class="row my-5 align-items-center justify-content-center gap-5">
-                    <!-- Col -->
-                    <div class="col-8 col-lg-4 col-xl-3 mb-4">
-                        <div class="card border-0 shadow">
-                            <div class="card-body text-center py-4">
-                                <h4 class="card-title">Makeup Trends of 2024</h4>
-                                <p class="lead card-subtitle text-4 small">BY TASHA NICOLE SMITH</p>
-                                <img src="./assets/images/Makeup Trends.png" class="img-fluid my-2" alt="Image 2">
-                                <div class="text-start mt-3">
-                                    <p class="small">
-                                        <i class="fa-regular fa-calendar-days" style="color: #000000;"></i> FEB 17, 2024
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card-footer  py-2 text-center">
-                                <a target="_blank"
-                                    href="https://www.elle.com/beauty/makeup-skin-care/a46671624/2024-makeup-trends/"
-                                    class=" ">Read Article <i class="fa-brands fa-readme" style="color: #000000;"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Col -->
-                    <div class="col-8 col-lg-4 col-xl-3 mb-4">
-                        <div class="card border-0 shadow">
-                            <div class="card-body text-center py-4">
-                                <h4 class="card-title">Pat McGrath Glass Skin</h4>
-                                <p class="lead card-subtitle text-4 small">BY ANNIE BLAY</p>
-                                <img src="./assets/images/pat mcgrath.png" class="img-fluid my-2" alt="Image 2">
-                                <div class="text-start mt-3">
-                                    <p class="small">
-                                        <i class="fa-regular fa-calendar-days" style="color: #000000;"></i> February 2,
-                                        2024
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card-footer  py-2 text-center">
-                                <a target="_blank"
-                                    href="https://www.allure.com/story/pat-mcgrath-porcelain-skin-maison-maison-margiela-couture-makeup"
-                                    class=" ">Read Article <i class="fa-brands fa-readme" style="color: #000000;"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Col -->
-                    <div class="col-8 col-lg-4 col-xl-3 mb-4">
-                        <div class="card border-0 shadow">
-                            <div class="card-body text-center py-4">
-                                <h5 class="card-title">Douyin Makeup on Morenas</h5>
-                                <p class="lead card-subtitle text-4 small">BY BEAUTYHUB.PH</p>
-                                <img src="./assets/images/douyin morena.png" class="img-fluid my-2" alt="Image 2">
-                                <div class="text-start mt-3">
-                                    <p class="small">
-                                        <i class="fa-regular fa-calendar-days" style="color: #000000;"></i> March 17,
-                                        2024
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card-footer  py-2 text-center">
-                                <a target="_blank"
-                                    href="https://www.beautyhub.ph/lifestyle/smile-confidence/douyin-makeup-morena/"
-                                    class=" ">Read Article <i class="fa-brands fa-readme" style="color: #000000;"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="oval-image-container">
+                    <a target="_blank" href="https://milkmakeup.com/products/cooling-water-jelly-tint?variant=spritz-coral"><img class=" oval-image" src="assets/images/jelly-tint.png" alt=""></a>
                 </div>
-            </div>
-        </section>
-
-        <!-- Trending Products of the Month -->
-        <section>
-            <div class="container-lg">
-                <div class="text-center">
-                    <h1 class="section-title">Trending Products of the Month</h1>
-                </div>
-                <!-- Grid -->
-                <!-- Row -->
-                <div class="row my-5 align-items-center justify-content-center gap-5">
-                    <!-- Col -->
-                    <div class="col-8 col-lg-4 col-xl-3 mb-4">
-                        <a target="_blank"
-                            href="https://flowerknows.co/?gs2id=CjsaCQiAqsitBhDlARIsAGMR1RixghUQjuWARa8LoLw9WNnE2i9HzhshG2-dyV_IS3ok6UH048kqGIMaAlbLEALw_wcB&ource=vaneadssgaolpo&edium=vasasdneraukilop2&ampaign=ganikolopare3da&ontent=ikoloete&ref=viktoriia&erm=bananaterjikulop&gad_source=1">
-                            <img src="./assets/images/flowerknows.png"
-                                class="img-fluid rounded-circle border border-1 border-secondary shadow" alt="Image 2">
-                        </a>
-                    </div>
-                    <!-- Col -->
-                    <div class="col-8 col-lg-4 col-xl-3 mb-4">
-                        <a target="_blank"
-                            href="https://milkmakeup.com/products/cooling-water-jelly-tint?variant=spritz-coral">
-                            <img src="./assets/images/jelly tint.png"
-                                class="img-fluid rounded-circle border border-1 border-secondary shadow" alt="Image 2">
-                        </a>
-                    </div>
-                    <!-- Col -->
-                    <div class="col-8 col-lg-4 col-xl-3 mb-4">
-                        <a target="_blank"
-                            href="https://www.maybelline.com.hk/en-hk/face/foundation/super-stay-lumi-matte">
-                            <img src="./assets/images/lumi matte foundation.png" class="img-fluid rounded-circle shadow"
-                                alt="Image 2">
-                        </a>
-                    </div>
+                <div class="oval-image-container">
+                    <a target="_blank" href="https://www.maybelline.com.hk/en-hk/face/foundation/super-stay-lumi-matte"><img class=" oval-image" src="assets/images/lumi-matte-foundation.png" alt=""></a>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- FOOTER -->
-    <div class="container-fluid footer px-4 upper-footer" style="background-color: #e6dcd3;">
-        <footer class=" footer-upper d-flex flex-wrap justify-content-between align-items-center py-3   border-top">
-            <div class="col-md-4 d-flex align-items-center">
-                <a href="https://getbootstrap.com/"
-                    class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-                    <svg class="bi" width="30" height="24">
-                        <use xlink:href="#bootstrap"></use>
-                    </svg>
-                </a>
-                <img src="./assets/images/logo.PNG" alt="" class="image-logo">
-                <span class="mb-3 mb-md-0 text-body-secondary"> &copy; Art of Makeup Mastery 2024</span>
+    <footer>
+        <div class="footer-header">
+            <div class="footer-logo"><img src="assets/images/logo.PNG" alt="">
+                <p>© Art of Makeup Mastery 2024</p>
             </div>
-            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                <li class="ms-3">
-                    <a class="text-body-secondary" href="">
-                        <i class="fa-regular fa-envelope"></i>
-                    </a>
-                </li>
-            </ul>
-        </footer>
-    </div>
-    <footer class="lower-footer text-center" style="background-color: #bda18c;">
-        <p class="lower-footer text-center" style="background-color: #bda18c;">Web Development by Sofia Celera</p>
-    </footer>
-    <script src="./assets/js/index.js"></script>
+            <div class="footer-socials">
+                <a href="">
+                    <i class="fa-regular fa-envelope"></i>
+                </a>
 
+            </div>
+        </div>
+
+        <div class="footer-footer">
+            <p>Web Development by Sofia Celera</p>
+        </div>
+    </footer>
+    <script src="assets/js/index.js">
+    </script>
 </body>
+
 </html>
