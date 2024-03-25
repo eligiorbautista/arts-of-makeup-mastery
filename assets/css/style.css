@@ -63,12 +63,23 @@ section {
     align-items: center;
     justify-content: center;
     gap: 100px;
+ 
 }
 
 .container .text-container {
     flex: 0 0 auto;
     width: 30%;
+    line-height: 25px;
 }
+
+.container .long-text-container {
+    width: 65vw;
+    font-size: 1.3rem;
+    line-height: 25px;
+    text-align: center;
+}
+ 
+
 
 .container .text-container h1 {
     font-size: calc(1rem + 3vw);
@@ -77,11 +88,21 @@ section {
     font-family: 'Satisfy', cursive;
 }
 
+.section-page-title {
+    font-size: calc(1rem + 3vw);
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 50px; 
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+    width: 100vw;
+}
+
 .section-title {
     font-size: calc(1rem + 2vw);
     font-weight: 300;
     line-height: 1.2;
-    margin: 50px 0; 
+    margin-bottom: 50px; 
     text-align: center;
     font-family: 'Satisfy', cursive;
     width: 100vw;
@@ -112,6 +133,12 @@ section {
 
 /* RESPONSIVE DESIGN */
 @media (max-width: 992px) {
+
+    .container {
+        gap: 30px;
+    }
+
+
     .container .text-container h1 {
         font-size: calc(1rem + 5vw);
     }
@@ -119,11 +146,15 @@ section {
     .container .text-container p {
         font-size: 1rem;
     }
-    
+
+    .section-page-title {
+        font-size: calc(1rem + 6vw);
+    }  
+
     .section-title {
         font-size: calc(1rem + 5vw);
         margin-top: 20px;
-        margin-bottom: 80px;
+        margin-bottom: 40px;
         width: 80vw;
     }
 
@@ -143,11 +174,15 @@ section {
 
 @media (max-width: 576px) {
     .container {
-        gap: 60px;
+        gap: 20px;
     }
 
     .container .text-container h1 {
         font-size: calc(1rem + 6vw);
+    }
+
+    .section-page-title {
+        font-size: calc(1rem + 7vw);
     }
 
     .section-title {
