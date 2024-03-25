@@ -52,7 +52,8 @@ section {
     border-radius: 50%;
     overflow: hidden;
     position: relative;
-    border: 2px solid #d8cec5;
+ 
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 
 
@@ -112,13 +113,15 @@ section {
 /* RESPONSIVE DESIGN */
 @media (max-width: 992px) {
     .container .text-container h1 {
-        font-size: calc(1rem + 4vw);
+        font-size: calc(1rem + 5vw);
+    }
+
+    .container .text-container p {
+        font-size: 1rem;
     }
     
     .section-title {
-        font-size: calc(1rem + 3vw);
-    }
-    .section-title {
+        font-size: calc(1rem + 5vw);
         padding: 40px 0;
         width: 80vw;
     }
@@ -138,12 +141,20 @@ section {
 }
 
 @media (max-width: 576px) {
+    .container {
+        gap: 20px;
+    }
+
     .container .text-container h1 {
-        font-size: calc(1rem + 5vw);
+        font-size: calc(1rem + 6vw);
     }
     
+    .container .text-container p {
+        font-size: 0.9rem;
+    }
+
     .section-title {
-        font-size: calc(1rem + 4vw);
+        font-size: calc(1rem + 6vw);
     }
     .container .image-container {
         width: 70vw;
