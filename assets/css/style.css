@@ -148,10 +148,6 @@ section {
     .container .text-container h1 {
         font-size: calc(1rem + 6vw);
     }
-    
-    .container .text-container p {
-        font-size: 0.9rem;
-    }
 
     .section-title {
         font-size: calc(1rem + 6vw);
