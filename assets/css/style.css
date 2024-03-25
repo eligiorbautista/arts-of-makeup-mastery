@@ -39,9 +39,12 @@ main {
 }
 
 section {
-
-    padding: 50px 50px;
-
+ padding: 50px 0;
+ margin: 0 auto;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
 }
 
 /* TEXT AND IMAGE */
@@ -108,6 +111,13 @@ section {
 
 /* RESPONSIVE DESIGN */
 @media (max-width: 992px) {
+    .container .text-container h1 {
+        font-size: calc(1rem + 4vw);
+    }
+    
+    .section-title {
+        font-size: calc(1rem + 3vw);
+    }
     .section-title {
         padding: 40px 0;
         width: 80vw;
@@ -128,6 +138,13 @@ section {
 }
 
 @media (max-width: 576px) {
+    .container .text-container h1 {
+        font-size: calc(1rem + 5vw);
+    }
+    
+    .section-title {
+        font-size: calc(1rem + 4vw);
+    }
     .container .image-container {
         width: 70vw;
     }
